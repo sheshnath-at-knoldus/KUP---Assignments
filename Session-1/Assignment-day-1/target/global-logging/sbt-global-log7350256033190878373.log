@@ -1,0 +1,122 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.8.2 (Ubuntu Java 11.0.18)
+[debug]       Load.loadUnit: plugins took 95.014437ms
+[debug]       Load.loadUnit: defsScala took 0.398072ms
+[debug] [Loading] Scanning directory /home/knoldus/.sbt/1.0/plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/knoldus/.sbt/1.0/plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 21.46323 ms
+[debug]           Load.resolveProject(global-plugins) took 57.296221ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: /home/knoldus/.sbt/1.0/plugins, plugins: List(<none>))) took 113.881477ms
+[debug] [Loading] Done in /home/knoldus/.sbt/1.0/plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 141.609206ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.322779ms
+[debug]     Load.loadUnit(file:/home/knoldus/.sbt/1.0/plugins/, ...) took 248.245661ms
+[debug]   Load.apply: load took 460.652977ms
+[debug]   Load.apply: resolveProjects took 5.983897ms
+[debug]   Load.apply: finalTransforms took 59.76243ms
+[debug]   Load.apply: config.delegates took 10.080274ms
+[debug]   Load.apply: Def.make(settings)... took 564.655462ms
+[debug]   Load.apply: structureIndex took 112.35741ms
+[debug]   Load.apply: mkStreams took 1.443498ms
+[info] loading global plugins from /home/knoldus/.sbt/1.0/plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 2220.734131ms
+[debug]           Load.loadUnit: plugins took 16.495868ms
+[debug]           Load.loadUnit: defsScala took 0.005665ms
+[debug] [Loading] Scanning directory /home/knoldus/KUP-assignment -Day -1/project
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/knoldus/KUP-assignment -Day -1/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 2.362745 ms
+[debug]               Load.resolveProject(kup-assignment-day-1-build) took 1.123774ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id kup-assignment-day-1-build, base: /home/knoldus/KUP-assignment -Day -1/project, plugins: List(<none>))) took 4.155745ms
+[debug] [Loading] Done in /home/knoldus/KUP-assignment -Day -1/project, returning: (kup-assignment-day-1-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 5.917165ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.035847ms
+[debug]         Load.loadUnit(file:/home/knoldus/KUP-assignment%20-Day%20-1/project/, ...) took 23.125441ms
+[debug]       Load.apply: load took 24.923193ms
+[debug]       Load.apply: resolveProjects took 0.106373ms
+[debug]       Load.apply: finalTransforms took 12.743726ms
+[debug]       Load.apply: config.delegates took 0.400523ms
+[debug]       Load.apply: Def.make(settings)... took 92.726112ms
+[debug]       Load.apply: structureIndex took 36.557776ms
+[debug]       Load.apply: mkStreams took 0.002603ms
+[info] loading project definition from /home/knoldus/KUP-assignment -Day -1/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 338.200067ms
+[debug]     Load.loadUnit: defsScala took 0.003675ms
+[debug] [Loading] Scanning directory /home/knoldus/KUP-assignment -Day -1
+[debug]       Load.loadUnit: mkEval took 4.50912ms
+[debug] [Loading] Found root project root w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 2.29181 ms
+[info] loading settings for project root from build.sbt ...
+[debug]         Load.resolveProject(root) took 2.598453ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id root, base: /home/knoldus/KUP-assignment -Day -1, plugins: List(<none>))) took 6.183204ms
+[debug] [Loading] Done in /home/knoldus/KUP-assignment -Day -1, returning: (root)
+[debug]     Load.loadUnit: loadedProjectsRaw took 150.217587ms
+[debug]     Load.loadUnit: cleanEvalClasses took 4.761874ms
+[debug]   Load.loadUnit(file:/home/knoldus/KUP-assignment%20-Day%20-1/, ...) took 493.908693ms
+[debug] Load.apply: load took 495.513309ms
+[debug] Load.apply: resolveProjects took 0.172768ms
+[debug] Load.apply: finalTransforms took 10.140659ms
+[debug] Load.apply: config.delegates took 0.385954ms
+[debug] Load.apply: Def.make(settings)... took 67.902066ms
+[debug] Load.apply: structureIndex took 21.204385ms
+[debug] Load.apply: mkStreams took 0.002191ms
+[info] set current project to KUP-assignment -Day -1 (in build file:/home/knoldus/KUP-assignment%20-Day%20-1/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(shell, None, None)
+[info] sbt server started at local:///home/knoldus/.sbt/1.0/server/fca7170b6849eb5f5217/sock
+[debug] Writing bsp connection file
+[info] started sbt server
