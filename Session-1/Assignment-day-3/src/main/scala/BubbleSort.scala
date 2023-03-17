@@ -1,29 +1,25 @@
+import scala.annotation.tailrec
 
 object BubbleSort extends App {
-  val arry = Array(23, 90, 12, 18)
-  val length = arry.length
 
-  def sort(array: Array[Int], length: Int): Array[Int] = {
-    if (length == 0) array
+  def sort(list: List[Int], length: Int): List[Int] = {
+    if (length == 0) list
     else {
-      val helperArray: Array[Int] = adjacentSwap(array, 0, length)
-      val sortedArray: Array[Int] = sort(helperArray, length - 1)
+      val helperArray: List[Int] = adjacentSwap(list, 0, length)
+      val sortedArray: List[Int] = sort(helperArray, length - 1)
       sortedArray
     }
   }
 
-  def adjacentSwap(array: Array[Int], index: Int, length: Int): Array[Int] = {
+  @tailrec
+  def adjacentSwap(array: List[Int], index: Int, length: Int): List[Int] = {
     if (index == length || index + 1 > array.length - 1)  {
       array
     } else if (array(index) > array(index + 1)) {
-      val temp = array(index + 1)
-      array(index + 1) = array(index)
-      array(index) = temp
-      adjacentSwap(array, index + 1, length)
-      array
+      val swappedList = array.updated(index, array(index + 1)).updated(index + 1, array(index))
+      adjacentSwap(swappedList, index + 1, length)
     } else {
       adjacentSwap(array, index + 1, length)
     }
   }
-  println(sort(arry, length).mkString(", "))
 }
