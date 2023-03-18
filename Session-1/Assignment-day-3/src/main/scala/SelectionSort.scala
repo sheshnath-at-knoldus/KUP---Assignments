@@ -24,5 +24,4 @@ object SelectionSort extends App{
       helperFunction(list, compareIndex + 1, listLength, minimumIndex)
     }
   }
-
 }
